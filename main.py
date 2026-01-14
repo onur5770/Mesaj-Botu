@@ -103,10 +103,15 @@ status_label.pack(pady=15)
 btn_frame = ctk.CTkFrame(app, fg_color="transparent") 
 btn_frame.pack(pady=10)
 
-start_button = ctk.CTkButton(btn_frame, text="BAŞLAT", command=start_process, 
+start_button = ctk.CTkButton(btn_frame, 
+                             text="BAŞLAT", 
+                             command=start_process, 
                              font=("Roboto", 14, "bold"), 
-                             fg_color="#27ae60", hover_color="#2ecc71", ı
-                             width=140, height=40, corner_radius=20)
+                             fg_color="#27ae60", 
+                             hover_color="#2ecc71",
+                             width=140, 
+                             height=40, 
+                             corner_radius=20)
 start_button.pack(side="left", padx=10)
 
 stop_button = ctk.CTkButton(btn_frame, text="DURDUR", command=stop_process, 
